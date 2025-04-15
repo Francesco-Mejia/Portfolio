@@ -9,13 +9,16 @@
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
   margin-top: 3rem;
 }
 
 .contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.contact-column {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -29,6 +32,7 @@
   background: #f5f6fa;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  min-width: 300px;
 }
 
 .contact-item:hover {
@@ -108,18 +112,18 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 968px) {
-  .contact-content {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
     gap: 2rem;
   }
 
-  .contact-info {
-    order: 2;
+  .contact-column {
+    width: 100%;
   }
 
-  .contact-form {
-    order: 1;
+  .contact-item {
+    min-width: auto;
   }
 }
 
