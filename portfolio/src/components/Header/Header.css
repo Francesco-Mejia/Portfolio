@@ -70,6 +70,7 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  z-index: 1001;
 }
 
 .menu-toggle span {
@@ -96,12 +97,15 @@
     gap: 1rem;
     transform: translateY(-100%);
     opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu.active {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 
   .menu-toggle.active span:nth-child(1) {
@@ -114,5 +118,15 @@
 
   .menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu a {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu a::after {
+    display: none;
   }
 } 
