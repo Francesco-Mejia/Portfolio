@@ -6,37 +6,39 @@ const Skills: React.FC = () => {
     {
       title: "Langages de Programmation",
       skills: [
-        { name: "C# (.NET)", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "JavaScript", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 }
+        { name: "C#", icon: "/images/skills/csharp.png" },
+        { name: "C++", icon: "/images/skills/cpp.png" },
+        { name: "Python", icon: "/images/skills/python.png" },
+        { name: "JavaScript", icon: "/images/skills/javascript.png" },
+        { name: "TypeScript", icon: "/images/skills/typescript.png" },
+        { name: "HTML", icon: "/images/skills/html5.png" },
+        { name: "CSS", icon: "/images/skills/css3.png" }
       ]
     },
     {
       title: "Bases de Données",
       skills: [
-        { name: "SQL Server", level: 85 },
-        { name: "MySQL", level: 80 }
+        { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
+        { name: "MySQL", icon: "/images/skills/pngimg.com - mysql_PNG17.png" }
       ]
     },
     {
       title: "Outils & Technologies",
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Azure", level: 75 },
-        { name: "CI/CD", level: 70 },
-        { name: "Méthode agile", level: 80 },
-        { name: "IOT", level: 75 }
+        { name: "Git", icon: "/images/skills/git.png" },
+        { name: "GitHub", icon: "/images/skills/github.png" },
+        { name: "Azure", icon: "/images/skills/azure.png" },
+        { name: "CI/CD", icon: "/images/skills/react.png" },
+        { name: "Agile", icon: "/images/skills/node.png" },
+        { name: "IOT", icon: "/images/skills/iot.png" },
+        { name: "React", icon: "/images/skills/auth0.svg" },
       ]
     },
     {
       title: "Systèmes d'Exploitation",
       skills: [
-        { name: "Windows", level: 90 },
-        { name: "Linux (Ubuntu, Kali)", level: 80 }
+        { name: "Windows", icon: "/images/skills/windows.png" },
+        { name: "Linux", icon: "/images/skills/linux.png" }
       ]
     }
   ];
@@ -52,16 +54,11 @@ const Skills: React.FC = () => {
               <div className="skills-list">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="skill-item">
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-progress"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    <img 
+                      src={skill.icon} 
+                      alt={`${skill.name} icon`} 
+                      className="skill-icon"
+                    />
                   </div>
                 ))}
               </div>

@@ -36,24 +36,41 @@
 }
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   gap: 1.5rem;
+  justify-items: center;
 }
 
 .skill-item {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill-name {
+  color: #2d3436;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 .skill-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-}
-
-.skill-name {
-  color: #2d3436;
-  font-weight: 500;
 }
 
 .skill-percentage {
@@ -119,5 +136,15 @@
 
   .category-title {
     font-size: 1.3rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
   }
 } 

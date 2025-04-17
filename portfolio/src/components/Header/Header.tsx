@@ -17,7 +17,6 @@ const Header: React.FC = () => {
         
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <a href="#" onClick={handleNavClick}>Accueil</a>
-          <a href="#about" onClick={handleNavClick}>À propos</a>
           <a href="#education" onClick={handleNavClick}>Éducation</a>
           <a href="#skills" onClick={handleNavClick}>Compétences</a>
           <a href="#experience" onClick={handleNavClick}>Expérience</a>
