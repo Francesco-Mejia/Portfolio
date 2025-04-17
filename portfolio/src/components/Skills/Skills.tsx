@@ -32,6 +32,8 @@ const Skills: React.FC = () => {
         { name: "Agile", icon: "/images/skills/node.png" },
         { name: "IOT", icon: "/images/skills/iot.png" },
         { name: "React", icon: "/images/skills/auth0.svg" },
+        { name: "Home Assistant", icon: "/images/skills/home-assistant.png" },
+        { name: "ESP-32", icon: "/images/skills/dotnet.png" },
       ]
     },
     {

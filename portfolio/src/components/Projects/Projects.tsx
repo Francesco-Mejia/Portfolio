@@ -17,7 +17,8 @@ const Projects: React.FC = () => {
         { name: "TypeScript", icon: "/images/skills/typescript.png" },
         { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
         { name: "Auth0", icon: "/images/skills/auth0.svg" },
-        { name: "Azure", icon: "/images/skills/azure.png" }
+        { name: "Azure", icon: "/images/skills/azure.png" },
+        { name: "CI/CD", icon: "/images/skills/ASP.NET.png" },
       ],
       image: null,
       github: "https://dev.azure.com/csf-dfc/EquipesSportives",
@@ -31,6 +32,7 @@ const Projects: React.FC = () => {
         { name: "HTML", icon: "/images/skills/html5.png" },
         { name: "JavaScript", icon: "/images/skills/javascript.png" },
         { name: "CSS", icon: "/images/skills/css3.png" },
+        { name: "Home Assistant", icon: "/images/skills/home-assistant.png" },
         { name: "IoT", icon: "/images/skills/iot.png" }
       ],
       image: null,
