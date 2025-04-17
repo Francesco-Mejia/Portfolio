@@ -7,8 +7,8 @@ const Education: React.FC = () => {
       degree: "AEC en programmation",
       school: "Cégep de Sainte-Foy",
       location: "Québec, Canada",
-      period: "Janvier 2023 – En cours",
-      description: "5ᵉ session en cours. Formation en programmation, bases de données et serveurs.",
+      period: "Janvier 2023 – Juin 2025",
+      description: "5ᵉ session en cours. AEC en programmation, bases de données et serveurs.",
       status: "En cours"
     },
     {

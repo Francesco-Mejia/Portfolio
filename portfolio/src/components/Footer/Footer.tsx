@@ -20,14 +20,8 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="footer-links">
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#experience">Expérience</a>
-            <a href="#education">Formation</a>
-            <a href="#contact">Contact</a>
           </div>
           <div className="footer-info">
-            <p>Francesco Mejia Solari</p>
             <p>Développeur Full Stack</p>
           </div>
         </div>

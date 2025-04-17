@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
         <div className="hero-content">
           <h1 className="hero-title">
             Francesco Mejia Solari
-            <span className="hero-subtitle">Développeur Full Stack</span>
+            <span className="hero-subtitle">Développeur</span>
           </h1>
           <p className="hero-description">
-            Étudiant passionné en programmation, bases de données et serveurs.
+            Étudiant passionné en programmation, bases de données et serveurs, à la recherche d'un stage.
             Je crée des solutions innovantes avec les technologies modernes.
           </p>
           <div className="hero-cta">
