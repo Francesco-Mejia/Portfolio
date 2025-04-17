@@ -48,17 +48,20 @@
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-bottom: 1.5rem;
+  justify-content: flex-start;
 }
 
-.technology-tag {
-  background: #f1f2f6;
-  color: #0984e3;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  font-weight: 500;
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: translateY(-3px);
 }
 
 .project-links {
@@ -114,5 +117,10 @@
 
   .project-title {
     font-size: 1.3rem;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
   }
 } 

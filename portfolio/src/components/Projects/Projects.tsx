@@ -1,12 +1,24 @@
 import React from 'react';
 import './Projects.css';
 
+interface Technology {
+  name: string;
+  icon: string;
+}
+
 const Projects: React.FC = () => {
   const projects = [
     {
       title: "Gestion des Équipes Sportives",
       description: "Application web complète pour la gestion des équipes de soccer (Projet Synthèse), permettant le suivi des présences, la communication entre parents, entraîneurs et l'organisation de la ligue. Développé avec une architecture moderne et des pratiques DevOps.",
-      technologies: ["C# .NET", "Entity Framework", "API REST", "React.js", "TypeScript", "SQL Server", "Auth0", "Azure", "CI/CD", "Méthodes Agiles"],
+      technologies: [
+        { name: "C#", icon: "/images/skills/csharp.png" },
+        { name: "React", icon: "/images/skills/react.png" },
+        { name: "TypeScript", icon: "/images/skills/typescript.png" },
+        { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
+        { name: "Auth0", icon: "/images/skills/auth0.svg" },
+        { name: "Azure", icon: "/images/skills/azure.png" }
+      ],
       image: null,
       github: "https://dev.azure.com/csf-dfc/EquipesSportives",
       liveDemo: "https://liguesoccerweb.azurewebsites.net/"
@@ -14,7 +26,13 @@ const Projects: React.FC = () => {
     {
       title: "Système de Surveillance IoT pour des livraisons sensibles",
       description: "Solution IoT innovante utilisant des capteurs BME/BMP 280 pour surveiller les conditions environnementales des livraisons sensibles. Intégration avec Home Assistant pour le monitoring en temps réel et l'envoi d'alertes. Le système permet de suivre la température, l'humidité et la pression pendant le transport.",
-      technologies: ["C++", "C", "HTML", "JavaScript", "CSS", "CMake", "Home Assistant", "IoT", "ESP-32","MQTT"],
+      technologies: [
+        { name: "C++", icon: "/images/skills/cpp.png" },
+        { name: "HTML", icon: "/images/skills/html5.png" },
+        { name: "JavaScript", icon: "/images/skills/javascript.png" },
+        { name: "CSS", icon: "/images/skills/css3.png" },
+        { name: "IoT", icon: "/images/skills/iot.png" }
+      ],
       image: null,
       github: "https://github.com/Francesco-Mejia/LIVRAISON_CAPTEURS_HOMEASSITANT",
       liveDemo: null
@@ -22,7 +40,9 @@ const Projects: React.FC = () => {
     {
       title: "Jeu Mastermind",
       description: "Implémentation du jeu classique Mastermind en C++ et C. Le jeu consiste à deviner une combinaison de couleurs secrète en utilisant des indices des respectives positions pour guider le joueur. Le projet démontre l'utilisation avancée des structures de données et des algorithmes.",
-      technologies: ["C++", "C", "Algorithmique avancée", "Structures de données"],
+      technologies: [
+        { name: "C++", icon: "/images/skills/cpp.png" }
+      ],
       image: null,
       github: "https://github.com/Francesco-Mejia/Mastermind_TP3_AlgoAvance",
       liveDemo: null
@@ -30,7 +50,12 @@ const Projects: React.FC = () => {
     {
       title: "Site Web Église le Reste de Sa Grâce",
       description: "Site web moderne et responsive pour l'église le reste de sa grâce, développé avec React et TypeScript. Le site présente les informations de l'église, les événements, et permet aux visiteurs de découvrir la communauté.",
-      technologies: ["React", "TypeScript", "CSS", "HTML"],
+      technologies: [
+        { name: "React", icon: "/images/skills/react.png" },
+        { name: "TypeScript", icon: "/images/skills/typescript.png" },
+        { name: "HTML", icon: "/images/skills/html5.png" },
+        { name: "CSS", icon: "/images/skills/css3.png" }
+      ],
       image: "https://egliselerestedesagrace.ca/",
       github: null,
       liveDemo: "https://egliselerestedesagrace.ca/"
@@ -38,7 +63,10 @@ const Projects: React.FC = () => {
     {
       title: "Système d'Alarme avec ESP-32",
       description: "Projet de système d'alarme utilisant un ESP-32, développé en C++. Le système permet la détection de mouvements et l'envoi de notifications en temps réel.",
-      technologies: ["C++", "ESP-32", "Arduino", "IOT", "MQTT", "API REST"],
+      technologies: [
+        { name: "C++", icon: "/images/skills/cpp.png" },
+        { name: "IoT", icon: "/images/skills/iot.png" }
+      ],
       image: null,
       github: "https://github.com/Francesco-Mejia/ReveilleMatinAlarmes-ESP-32",
       liveDemo: null
@@ -57,9 +85,13 @@ const Projects: React.FC = () => {
                 <p className="project-description">{project.description}</p>
                 <div className="project-technologies">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="technology-tag">
-                      {tech}
-                    </span>
+                    <img
+                      key={techIndex}
+                      src={tech.icon}
+                      alt={tech.name}
+                      title={tech.name}
+                      className="tech-icon"
+                    />
                   ))}
                 </div>
                 <div className="project-links">
