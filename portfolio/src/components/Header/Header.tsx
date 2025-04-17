@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-container">
         <a href="#" className="logo">
-          Francesco Mejia Solari
+          <img src="/images/logo-icon.png" alt="Francesco Mejia Solari Logo" className="logo-icon" />
         </a>
         
         <button 

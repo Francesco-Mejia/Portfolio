@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <div className="hero-content">
           <h1 className="hero-title">
             Francesco Mejia Solari
-            <span className="hero-subtitle">Développeur</span>
+            <span className="hero-subtitle">Développeur Full Stack</span>
           </h1>
           <p className="hero-description">
             Étudiant passionné en programmation, bases de données et serveurs, à la recherche d'un stage.
@@ -21,6 +21,9 @@ const Hero: React.FC = () => {
           <div className="hero-social">
             <a href="https://github.com/Francesco-Mejia" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/francesco-mejia-solari-95420333a" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin"></i>
             </a>
             <a href="mailto:francescomejiasolari@gmail.com">
               <i className="fas fa-envelope"></i>

@@ -41,6 +41,15 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
+              <div className="contact-item">
+                <i className="fab fa-linkedin"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/francesco-mejia-solari-95420333a" target="_blank" rel="noopener noreferrer">
+                    linkedin.com/in/francesco-mejia-solari
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
