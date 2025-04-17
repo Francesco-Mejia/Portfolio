@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 
 interface Technology {
@@ -6,8 +6,26 @@ interface Technology {
   icon: string;
 }
 
+interface Project {
+  title: string;
+  description: string;
+  technologies: Technology[];
+  image: string;
+  github: string | null;
+  liveDemo: string | null;
+}
+
 const Projects: React.FC = () => {
-  const projects = [
+  const [expandedProjects, setExpandedProjects] = useState<{ [key: string]: boolean }>({});
+
+  const toggleDescription = (projectTitle: string) => {
+    setExpandedProjects(prev => ({
+      ...prev,
+      [projectTitle]: !prev[projectTitle]
+    }));
+  };
+
+  const projects: Project[] = [
     {
       title: "Gestion des Équipes Sportives",
       description: "Application web complète pour la gestion des équipes de soccer (Projet Synthèse), permettant le suivi des présences, la communication entre parents, entraîneurs et l'organisation de la ligue. Développé avec une architecture moderne et des pratiques DevOps.",
@@ -18,9 +36,9 @@ const Projects: React.FC = () => {
         { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
         { name: "Auth0", icon: "/images/skills/auth0.svg" },
         { name: "Azure", icon: "/images/skills/azure.png" },
-        { name: "CI/CD", icon: "/images/skills/ASP.NET.png" },
+        { name: "CI/CD", icon: "/images/skills/ASP.NET.png" }
       ],
-      image: null,
+      image: "/images/projects/EquipesSportives.png",
       github: "https://dev.azure.com/csf-dfc/EquipesSportives",
       liveDemo: "https://liguesoccerweb.azurewebsites.net/"
     },
@@ -35,7 +53,7 @@ const Projects: React.FC = () => {
         { name: "Home Assistant", icon: "/images/skills/home-assistant.png" },
         { name: "IoT", icon: "/images/skills/iot.png" }
       ],
-      image: null,
+      image: "/images/projects/LivraisonSensibles.png",
       github: "https://github.com/Francesco-Mejia/LIVRAISON_CAPTEURS_HOMEASSITANT",
       liveDemo: null
     },
@@ -45,7 +63,7 @@ const Projects: React.FC = () => {
       technologies: [
         { name: "C++", icon: "/images/skills/cpp.png" }
       ],
-      image: null,
+      image: "/images/projects/Mastermind.jpg",
       github: "https://github.com/Francesco-Mejia/Mastermind_TP3_AlgoAvance",
       liveDemo: null
     },
@@ -58,7 +76,7 @@ const Projects: React.FC = () => {
         { name: "HTML", icon: "/images/skills/html5.png" },
         { name: "CSS", icon: "/images/skills/css3.png" }
       ],
-      image: "https://egliselerestedesagrace.ca/",
+      image: "/images/projects/Eglise.png",
       github: null,
       liveDemo: "https://egliselerestedesagrace.ca/"
     },
@@ -69,7 +87,7 @@ const Projects: React.FC = () => {
         { name: "C++", icon: "/images/skills/cpp.png" },
         { name: "IoT", icon: "/images/skills/iot.png" }
       ],
-      image: null,
+      image: "/images/projects/reveilmatin.jpg",
       github: "https://github.com/Francesco-Mejia/ReveilleMatinAlarmes-ESP-32",
       liveDemo: null
     }
@@ -82,9 +100,27 @@ const Projects: React.FC = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="project-image"
+              />
               <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+                <div 
+                  className="project-header"
+                  onClick={() => toggleDescription(project.title)}
+                >
+                  <h3 className="project-title">{project.title}</h3>
+                  <button 
+                    className={`toggle-description ${expandedProjects[project.title] ? 'active' : ''}`}
+                    aria-label="Toggle description"
+                  >
+                    <i className="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <p className={`project-description ${expandedProjects[project.title] ? 'active' : ''}`}>
+                  {project.description}
+                </p>
                 <div className="project-technologies">
                   {project.technologies.map((tech, techIndex) => (
                     <img
