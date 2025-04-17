@@ -21,7 +21,6 @@ const App: React.FC = () => {
             <Route path="/" element={
               <>
                 <Hero />
-                <About />
                 <Skills />
                 <Experience />
                 <Education />

@@ -15,16 +15,6 @@ const Header: React.FC = () => {
           <img src="/images/logo-icon.png" alt="Francesco Mejia Solari Logo" className="logo-icon" />
         </a>
         
-        <button 
-          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <a href="#" onClick={handleNavClick}>Accueil</a>
           <a href="#about" onClick={handleNavClick}>À propos</a>
@@ -34,6 +24,16 @@ const Header: React.FC = () => {
           <a href="#projects" onClick={handleNavClick}>Projets</a>
           <a href="#contact" onClick={handleNavClick}>Contact</a>
         </nav>
+
+        <button 
+          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
   );
