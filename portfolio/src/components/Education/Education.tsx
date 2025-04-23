@@ -24,7 +24,7 @@ const Education: React.FC = () => {
   return (
     <section id="education" className="education">
       <div className="education-container">
-        <h2 className="section-title">Formation</h2>
+        <h2 className="section-title">Formations</h2>
         <div className="education-grid">
           {education.map((edu, index) => (
             <div key={index} className="education-card">

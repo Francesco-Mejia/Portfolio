@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "Gestion des Équipes Sportives",
+      title: "Gestion d'une ligue de soccer (en cours)",
       description: "Application web complète pour la gestion des équipes de soccer (Projet Synthèse), permettant le suivi des présences, la communication entre parents, entraîneurs et l'organisation de la ligue. Développé avec une architecture moderne et des pratiques DevOps.",
       technologies: [
         { name: "C#", icon: "/images/skills/csharp.png" },
@@ -140,7 +140,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="project-link github"
                     >
-                      {project.title === "Gestion des Équipes Sportives" ? (
+                      {project.title === "Gestion d'une ligue de soccer (en cours)" ? (
                         <i className="fab fa-azure"></i>
                       ) : (
                         <i className="fab fa-github"></i>
