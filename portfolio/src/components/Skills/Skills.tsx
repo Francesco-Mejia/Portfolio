@@ -19,7 +19,8 @@ const Skills: React.FC = () => {
       title: "Bases de Données",
       skills: [
         { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
-        { name: "MySQL", icon: "/images/skills/pngimg.com - mysql_PNG17.png" }
+        { name: "MySQL", icon: "/images/skills/pngimg.com - mysql_PNG17.png" },
+        { name: "Oracle", icon: "/images/skills/Oracle_logo.png" }
       ]
     },
     {
@@ -34,6 +35,7 @@ const Skills: React.FC = () => {
         { name: "React", icon: "/images/skills/auth0.svg" },
         { name: "Home Assistant", icon: "/images/skills/home-assistant.png" },
         { name: "ESP-32", icon: "/images/skills/dotnet.png" },
+        { name: "Angular", icon: "/images/skills/angular-logo.png" }
       ]
     },
     {
