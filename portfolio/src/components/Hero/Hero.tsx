@@ -11,8 +11,8 @@ const Hero: React.FC = () => {
             <span className="hero-subtitle">Développeur Full Stack</span>
           </h1>
           <p className="hero-description">
-            Étudiant passionné en programmation, bases de données et serveurs à la recherche d'un stage.
-            Je crée des solutions innovantes avec les technologies modernes.
+            Employé chez Infodev EDI inc. en tant que développeur full stack, avec +3 ans d'expérience dans le domaine de la programmation
+            Je crée des solutions innovantes avec les technologies modernes pour vos besoins spécifiques.
           </p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button primary">Me Contacter</a>

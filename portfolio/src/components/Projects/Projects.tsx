@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "Gestion d'une ligue de soccer (en cours)",
+      title: "Gestion d'une ligue de soccer",
       description: "Application web complète pour la gestion des équipes de soccer (Projet Synthèse), permettant le suivi des présences, la communication entre parents, entraîneurs et l'organisation de la ligue. Développé avec une architecture moderne et des pratiques DevOps.",
       technologies: [
         { name: "C#", icon: "/images/skills/csharp.png" },
@@ -77,8 +77,21 @@ const Projects: React.FC = () => {
         { name: "CSS", icon: "/images/skills/css3.png" }
       ],
       image: "/images/projects/Eglise.png",
-      github: null,
+      github: "https://github.com/Francesco-Mejia/iglesia-website",
       liveDemo: "https://egliselerestedesagrace.ca/"
+    },
+    {
+      title: "Site Web Party QC",
+      description: "Site web moderne et responsive pour l'organisation d'évenements nocturnes à la Ville de Québec, développé avec React et TypeScript. Le site présente un système pour la reservation de billets, création de comptes personalisées, paiements en ligne et plusieurs autres fonctionnalitées pour les gens qui veulent s'amuser",
+      technologies: [
+        { name: "React", icon: "/images/skills/react.png" },
+        { name: "TypeScript", icon: "/images/skills/typescript.png" },
+        { name: "HTML", icon: "/images/skills/html5.png" },
+        { name: "CSS", icon: "/images/skills/css3.png" }
+      ],
+      image: "/images/projects/PartyQC.png",
+      github: "https://github.com/Francesco-Mejia/party_qc",
+      liveDemo: "https://netstatevents.netlify.app/"
     },
     {
       title: "Système d'Alarme avec ESP-32",

@@ -9,10 +9,12 @@ const Skills: React.FC = () => {
         { name: "C#", icon: "/images/skills/csharp.png" },
         { name: "C++", icon: "/images/skills/cpp.png" },
         { name: "Python", icon: "/images/skills/python.png" },
+        { name: "R", icon: "/images/skills/R_logo.png"},
         { name: "JavaScript", icon: "/images/skills/javascript.png" },
         { name: "TypeScript", icon: "/images/skills/typescript.png" },
         { name: "HTML", icon: "/images/skills/html5.png" },
-        { name: "CSS", icon: "/images/skills/css3.png" }
+        { name: "CSS", icon: "/images/skills/css3.png" },
+        { name: "Next", icon: "/images/skills/next-js.svg" }
       ]
     },
     {
@@ -20,7 +22,8 @@ const Skills: React.FC = () => {
       skills: [
         { name: "SQL Server", icon: "/images/skills/icon-microsoft-sql-server.png" },
         { name: "MySQL", icon: "/images/skills/pngimg.com - mysql_PNG17.png" },
-        { name: "Oracle", icon: "/images/skills/Oracle_logo.png" }
+        { name: "Oracle", icon: "/images/skills/Oracle_logo.png" },
+        { name: "MongoDb", icon: "/images/skills/MongoDB_Logo.png" }
       ]
     },
     {
@@ -35,7 +38,10 @@ const Skills: React.FC = () => {
         { name: "React", icon: "/images/skills/auth0.svg" },
         { name: "Home Assistant", icon: "/images/skills/home-assistant.png" },
         { name: "ESP-32", icon: "/images/skills/dotnet.png" },
-        { name: "Angular", icon: "/images/skills/angular-logo.png" }
+        { name: "Angular", icon: "/images/skills/angular-logo.png" },
+        { name: "Leaflet", icon: "/images/skills/Leaflet_logo.png" },
+        { name: "Plotly", icon: "/images/skills/plotly-logo.png" },
+        { name: "Docker", icon: "/images/skills/docker-logo.png" }
       ]
     },
     {

@@ -4,6 +4,14 @@ import './Experience.css';
 const Experience: React.FC = () => {
   const experiences = [
     {
+      title: "Développeur Full-Stack",
+      company: "Infodev EDI inc.",
+      location: "Québec, Canada",
+      period: "Actuellement",
+      description: "Développeur faisant partie de l'équipe software de l'entreprise en faisant des logiciels dédiés pour les besoins de chaque client",
+      technologies: ["React", "TypeScript", "C++", "SQL", "R", "Entre plusieurs autres"]
+    },
+    {
       title: "Développeur Front-End",
       company: "Église le reste de sa grâce",
       location: "Québec, Canada",
@@ -15,7 +23,7 @@ const Experience: React.FC = () => {
       title: "Préposé à la salle à manger",
       company: "Gibraltar (RPA) et Jardins du haut Saint-Laurent (CHSLD)",
       location: "Québec, Canada",
-      period: "Avril 2023 - Actuellement",
+      period: "Avril 2023 - Janvier 2025",
       description: "Service aux résidents pour le petit-déjeuner, déjeuner et dîner, gestion de la cuisine et maintien du service actif tout au long de la journée.",
       technologies: []
     },
@@ -25,14 +33,6 @@ const Experience: React.FC = () => {
       location: "Québec, Canada",
       period: "2023 - Mars 2023",
       description: "Responsable de l'entrepôt, réception, organisation et enregistrement de la marchandise entrante par palettes et codes d'énumération.",
-      technologies: []
-    },
-    {
-      title: "Bénévolat",
-      company: "Centre communautaire",
-      location: "Toronto, Canada",
-      period: "Juin 2019 - Août 2019",
-      description: "Moniteur dans un camp d'été, travail avec des enfants de 8 à 12 ans, activités éducatives.",
       technologies: []
     }
   ];
